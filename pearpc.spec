@@ -8,6 +8,8 @@ Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
 License:	GPL
 Group:		Applications/Emulators
 Url:		http://pearpc.sourceforge.net
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	flex
 %ifarch %{ix86}
 BuildRequires:	nasm
