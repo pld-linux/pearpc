@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=PearPC
+Type=Application
+Comment=PowerPC emulator
+Comment[pl]=Emulator PowerPC
+Exec=ppc
+#Icon=pearpc.png
+Terminal=true
+Categories=Utility;Emulator;
+Encoding=UTF-8
+# vi: encoding=utf-8

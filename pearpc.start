@@ -1,0 +1,48 @@
+#!/bin/sh
+# $Id$
+# start script for PearPC
+
+
+GUI=
+UI=
+ROOT=
+
+if [ -f $HOME/.pearpc ]; then
+	. $HOME/.pearpc
+fi
+
+EXEC=""
+[ -x /usr/bin/ppc.x11 ] && EXEC=/usr/bin/ppc.x11
+[ -x /usr/bin/ppc.sdl ] && EXEC=/usr/bin/ppc.sdl
+[ -x /usr/bin/ppc.qt ] && EXEC=/usr/bin/ppc.qt
+[ -x /usr/bin/ppc.gtk ] && EXEC=/usr/bin/ppc.gtk
+
+[ -x /usr/bin/ppc.$UI ] && EXEC=/usr/bin/ppc.$UI
+[ -x /usr/bin/ppc.$GUI ] && EXEC=/usr/bin/ppc.$GUI
+
+if [ -z "$EXEC" ]; then
+	echo "Can't find executable"
+	read
+	exit 1
+fi
+
+if [ -n "$*" ]; then
+	exec $EXEC ${1+"$@"}
+fi
+
+if [ -z "$CONF" ]; then
+	echo "You nead to specify config file in ~/.pearpc if you want to run this programm without arguments."
+	echo "Do it setting CONF=path/to/config"
+	echo "You can set ROOT= directory, everything will be relative to this directory."
+	echo "Setting UI= you can chose your favorite interface if you have installed."
+	read
+	exit 2
+fi
+
+if [ -n "$ROOT" ]; then
+	cd $ROOT
+else
+	cd $HOME
+fi
+
+exec $EXEC $CONF
