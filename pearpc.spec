@@ -2,19 +2,20 @@ Summary:	PowerPC emulator
 Summary(pl):	Emulator PowerPC
 Name:		pearpc
 Version:	0.3.1
-Release:	1
+Release:	0.1
 License:	GPL
 Group:		Applications/Emulators
 Source0:	http://dl.sourceforge.net/pearpc/%{name}-%{version}.tar.bz2
 # Source0-md5:	d92ce39f1f8f80fad9ebe5f5f04e7bb4
 URL:		http://pearpc.sourceforge.net/
+BuildRequires:	SDL-devel >= 1.2
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	flex
 %ifarch %{ix86}
 BuildRequires:	nasm
 %endif
-BuildRequires:	qt-devel >= 3.0
+#BuildRequires:	qt-devel >= 3.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -29,14 +30,14 @@ miêdzy innymi MacOS X, Linuksa PPC i Darwina.
 %setup -q
 
 %build
-QTDIR="%{_prefix}"
-CFLAGS="%{rpmcflags} -I%{_includedir}/qt"
-export QTDIR CFLAGS
+#QTDIR="%{_prefix}"
+#CFLAGS="%{rpmcflags} -I%{_includedir}/qt"
+#export QTDIR CFLAGS
 %{__aclocal}
 %{__autoconf}
 %{__automake}
 %configure \
-	--enable-gui=qt \
+	--enable-ui=sdl \
 %ifarch %ix86
 	--enable-cpu=jitc_x86
 %endif
