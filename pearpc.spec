@@ -3,11 +3,11 @@ Summary(pl):	Emulator PowerPC
 Name:		pearpc
 Version:	0.2.0
 Release:	1
-Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
-# Source0-md5:	35820dba65afd73728451c94b4903a4a
 License:	GPL
 Group:		Applications/Emulators
-Url:		http://pearpc.sourceforge.net
+Source0:	http://dl.sourceforge.net/pearpc/%{name}-%{version}.tar.bz2
+# Source0-md5:	35820dba65afd73728451c94b4903a4a
+URL:		http://pearpc.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	flex
@@ -45,6 +45,7 @@ export QTDIR CFLAGS
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
