@@ -1,12 +1,12 @@
 Summary:	PowerPC emulator
 Summary(pl):	Emulator PowerPC
 Name:		pearpc
-Version:	0.3.0
+Version:	0.3.1
 Release:	1
 License:	GPL
 Group:		Applications/Emulators
 Source0:	http://dl.sourceforge.net/pearpc/%{name}-%{version}.tar.bz2
-# Source0-md5:	f14f5a6dd42a7e5e715f59965f1c25a2
+# Source0-md5:	d92ce39f1f8f80fad9ebe5f5f04e7bb4
 URL:		http://pearpc.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
