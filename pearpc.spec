@@ -82,17 +82,17 @@ Qt PearPC version.
 Wersja Qt PearPC.
 
 %package gtk
-Summary:	Gtk PearPC version
-Summary(pl):	Wersja Gtk PearPC
+Summary:	GTK+ PearPC version
+Summary(pl):	Wersja GTK+ PearPC
 Group:		Applications/Emulators
 Requires:	%{name} = %{version}-%{release}
 Provides:	%{name}-bin = %{version}-%{release}
 
 %description gtk
-Gtk PearPC version.
+GTK+ PearPC version.
 
 %description gtk -l pl
-Wersja Gtk PearPC.
+Wersja GTK+ PearPC.
 
 %prep
 %setup -q
