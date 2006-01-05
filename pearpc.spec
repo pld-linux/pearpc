@@ -10,14 +10,15 @@
 Summary:	PowerPC emulator
 Summary(pl):	Emulator PowerPC
 Name:		pearpc
-Version:	0.3.1
-Release:	1
+Version:	0.4
+Release:	0.1
 License:	GPL
 Group:		Applications/Emulators
 Source0:	http://dl.sourceforge.net/pearpc/%{name}-%{version}.tar.bz2
-# Source0-md5:	d92ce39f1f8f80fad9ebe5f5f04e7bb4
+# Source0-md5:	cc317b19d61a49987f2265e885fa6301
 Source1:	%{name}.start
 Source2:	%{name}.desktop
+Patch0:		%{name}-ptrsize.patch
 URL:		http://pearpc.sourceforge.net/
 %{?with_sdl:BuildRequires:	SDL-devel >= 1.2.0}
 %{?with_x11:BuildRequires:	XFree86-devel}
@@ -96,6 +97,7 @@ Wersja GTK+ PearPC.
 
 %prep
 %setup -q
+%patch0 -p1
 sed 's@video\.x@%{_datadir}/%{name}/video.x@' \
 	-i ppccfg.example
 
