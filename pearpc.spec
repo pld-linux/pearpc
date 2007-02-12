@@ -8,7 +8,7 @@
 %bcond_with	gtk	# not finished
 #
 Summary:	PowerPC emulator
-Summary(pl):	Emulator PowerPC
+Summary(pl.UTF-8):   Emulator PowerPC
 Name:		pearpc
 Version:	0.4
 Release:	1
@@ -39,13 +39,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Experimental emulator of PowerPC hardware, capable of running at least
 MacOS X, Linux PPC and Darwin.
 
-%description -l pl
-Eksperymentalny emulator komputera PowerPC, umo¿liwiaj±cy uruchomienie
-miêdzy innymi MacOS X, Linuksa PPC i Darwina.
+%description -l pl.UTF-8
+Eksperymentalny emulator komputera PowerPC, umoÅ¼liwiajÄ…cy uruchomienie
+miÄ™dzy innymi MacOS X, Linuksa PPC i Darwina.
 
 %package x11
 Summary:	X11 PearPC version
-Summary(pl):	Wersja X11 PearPC
+Summary(pl.UTF-8):   Wersja X11 PearPC
 Group:		Applications/Emulators
 Requires:	%{name} = %{version}-%{release}
 Provides:	%{name}-bin = %{version}-%{release}
@@ -53,12 +53,12 @@ Provides:	%{name}-bin = %{version}-%{release}
 %description x11
 X11 PearPC version.
 
-%description x11 -l pl
+%description x11 -l pl.UTF-8
 Wersja X11 PearPC.
 
 %package sdl
 Summary:	SDL PearPC version
-Summary(pl):	Wersja SDL PearPC
+Summary(pl.UTF-8):   Wersja SDL PearPC
 Group:		Applications/Emulators
 Requires:	%{name} = %{version}-%{release}
 Provides:	%{name}-bin = %{version}-%{release}
@@ -66,12 +66,12 @@ Provides:	%{name}-bin = %{version}-%{release}
 %description sdl
 SDL PearPC version.
 
-%description sdl -l pl
+%description sdl -l pl.UTF-8
 Wersja SDL PearPC.
 
 %package qt
 Summary:	Qt PearPC version
-Summary(pl):	Wersja Qt PearPC
+Summary(pl.UTF-8):   Wersja Qt PearPC
 Group:		Applications/Emulators
 Requires:	%{name} = %{version}-%{release}
 Provides:	%{name}-bin = %{version}-%{release}
@@ -79,12 +79,12 @@ Provides:	%{name}-bin = %{version}-%{release}
 %description qt
 Qt PearPC version.
 
-%description qt -l pl
+%description qt -l pl.UTF-8
 Wersja Qt PearPC.
 
 %package gtk
 Summary:	GTK+ PearPC version
-Summary(pl):	Wersja GTK+ PearPC
+Summary(pl.UTF-8):   Wersja GTK+ PearPC
 Group:		Applications/Emulators
 Requires:	%{name} = %{version}-%{release}
 Provides:	%{name}-bin = %{version}-%{release}
@@ -92,7 +92,7 @@ Provides:	%{name}-bin = %{version}-%{release}
 %description gtk
 GTK+ PearPC version.
 
-%description gtk -l pl
+%description gtk -l pl.UTF-8
 Wersja GTK+ PearPC.
 
 %prep
