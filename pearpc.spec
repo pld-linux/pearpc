@@ -8,7 +8,7 @@
 %bcond_with	gtk	# not finished
 #
 Summary:	PowerPC emulator
-Summary(pl.UTF-8):   Emulator PowerPC
+Summary(pl.UTF-8):	Emulator PowerPC
 Name:		pearpc
 Version:	0.4
 Release:	1
@@ -45,7 +45,7 @@ między innymi MacOS X, Linuksa PPC i Darwina.
 
 %package x11
 Summary:	X11 PearPC version
-Summary(pl.UTF-8):   Wersja X11 PearPC
+Summary(pl.UTF-8):	Wersja X11 PearPC
 Group:		Applications/Emulators
 Requires:	%{name} = %{version}-%{release}
 Provides:	%{name}-bin = %{version}-%{release}
@@ -58,7 +58,7 @@ Wersja X11 PearPC.
 
 %package sdl
 Summary:	SDL PearPC version
-Summary(pl.UTF-8):   Wersja SDL PearPC
+Summary(pl.UTF-8):	Wersja SDL PearPC
 Group:		Applications/Emulators
 Requires:	%{name} = %{version}-%{release}
 Provides:	%{name}-bin = %{version}-%{release}
@@ -71,7 +71,7 @@ Wersja SDL PearPC.
 
 %package qt
 Summary:	Qt PearPC version
-Summary(pl.UTF-8):   Wersja Qt PearPC
+Summary(pl.UTF-8):	Wersja Qt PearPC
 Group:		Applications/Emulators
 Requires:	%{name} = %{version}-%{release}
 Provides:	%{name}-bin = %{version}-%{release}
@@ -84,7 +84,7 @@ Wersja Qt PearPC.
 
 %package gtk
 Summary:	GTK+ PearPC version
-Summary(pl.UTF-8):   Wersja GTK+ PearPC
+Summary(pl.UTF-8):	Wersja GTK+ PearPC
 Group:		Applications/Emulators
 Requires:	%{name} = %{version}-%{release}
 Provides:	%{name}-bin = %{version}-%{release}
