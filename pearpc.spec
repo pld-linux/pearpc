@@ -30,7 +30,7 @@ BuildRequires:	libstdc++-devel
 %ifarch %{ix86}
 BuildRequires:	nasm
 %endif
-%{?with_qt:BuildRequires:	qt-devel >= 3.0}
+%{?with_qt:BuildRequires:	qt-devel >= 1:3.0}
 BuildRequires:	sed >= 4.0
 Requires:	%{name}-bin = %{version}-%{release}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
