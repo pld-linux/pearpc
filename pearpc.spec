@@ -97,7 +97,7 @@ Wersja GTK+ PearPC.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch -P0 -p1
 sed 's@video\.x@%{_datadir}/%{name}/video.x@' \
 	-i ppccfg.example
 
